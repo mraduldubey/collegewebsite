@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").mouseenter(function(){
+        $("#panel").slideDown("slow");
+    });
+    $("#p2").mouseenter(function(){
+    	$("#panel").slideUp(500);
+    });
+});
+</script>
+ <style>a:link{color: rgb(0,0,0);}</style>
+<style>
+.topinner:hover{
+	background-color: lightgrey;
+}
+#t1:hover{
+	background-color: lightgrey;
+	color: rgb(126,0,0);
+}
+#t2:hover{
+	background-color: lightgrey;
+}
+#panel, #flip {
+	color: rgb(126,0,0);
+    padding: 0px;
+    text-align: center;
+	margin:0 auto;
+	background-color: #fff;
+	position: relative;
+}
+
+#panel {
+    padding: 10px;
+    display: none;
+}
+#top{
+	position: relative;
+	margin: 0px;
+	background-color: #fff;
+}
+#innertop{
+	background-color: #fff;
+}
+#one{
+	font-family: "Impact, Charcoal, sans-serif";
+	font-size: 20px;
+	padding-top: 25px;
+	padding-bottom: 5px;
+	margin-top: -5px;
+	width: 300px;
+	text-align: left;
+}
+#tablex{
+	border-top-style: solid;
+	border-color: rgb(126,30,0);
+	border-width: 2px;
+}
+#tabley{
+	border-top-style: solid;
+	border-color: rgb(126,70,0);
+	border-width: 5px;
+}
+#belowimage{
+	padding-left: 30px;
+}
+</style>
+</head>
+<body>
+
+<div id="tablex">
+<div id="flip">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tbody>
+				<tr>
+					<div id="logo">
+					<td id="topimage"><img src="small.png" width="80px" height="80"></td>
+					<td id="collegename"><p id="one">Indian Institute of Information Technology Kalyani</p></td></div>
+					<td id="about" class="topinner" style="width:150px; height:75px; text-align:center color: red"><a id="link" href="#">About</a></td>
+					<td style="width:5px;"><img src="bar.png" width="5" height="75"></td>
+					<td id="department" class="topinner" style="width:150px; height:75px; text-align:center"><a id="link" href="#">Department</a></td>
+					<td style="width:5px;"><img src="bar.png" width="5" height="75"></td>
+					<td id="faculty" class="topinner" style="width:150px; height:75px; text-align:center"><a id="link" href="#">Faculty</a></td>
+				</tr></div>
+			</tbody>
+		</table>
+		</div>
+<div id="tabley">
+<div id="panel">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+      <tr>
+        <td id="belowimage"><div style="padding: 0px 10px 0px 0px"><img src="iitkha.jpg" width="300px" height="100"></div></td>
+        <td id="t1"><div style="padding:0px 5px 0px 15px; text-align:left; margin: 5px 20px 5px 20px;"><a href="#">About IIIT Kalyani</a></div>
+		<div style="padding:0px 5px 5px 15px; text-align:left; margin: 5px 20px 5px 20px;"><a href="#">I.T Park</a></div>
+		<div style="padding:0px 5px 5px 15px; text-align:left; margin: 5px 20px 5px 20px;"><a href="#">Campus Life</a></div>
+		<div style="padding:0px 5px 5px 15px; text-align:left; margin: 5px 20px 5px 20px;"><a href="#">Campus Map</a></div></td>
+        <td id="t2"><div style="padding: 5px 5px 0px 40px; text-align:left; width: 100px; height: 50px"><a href="#">Computer Science</a></div>
+		<div style="padding:0px 5px 0px 40px; text-align:left; width: 100px; height: 50px"><a href="#">Information Technology</a></div>
+		<div style="padding:0px 5px 0px 40px; text-align:left; width: 100px; height: 50px"><a href="#">Mathematics</a></div></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+</div>
+<div id="p2" style="border: solid; border-color: lightgrey; height: 1024px"><p>body section</p></div>
+</body>
+</html>
